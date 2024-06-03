@@ -1,0 +1,712 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.head-content{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.head-content button{
+  margin-left: 4em;
+}
+
+.phone-dots{
+  display: none;
+}
+
+.nav-bar{
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: hsl(0, 0%, 90%);
+}
+
+.nav-bar a:hover{
+  color: hsl(0, 0%, 100%);
+  border-bottom: 2px solid white;
+}
+
+.nav-bar a + a{margin-left: 15px;}
+
+.background-img{
+  height: 100svh;
+  width: 100%;
+  background-image: url(assets/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+@keyframes car{
+  0%{
+    transform: translateY(4px);
+  }
+  50%{
+    transform: translateY(-4px);
+  }
+  100%{
+    transform: translateY(4px);
+  }
+}
+
+.hero-car{
+  margin-right: -10px;
+  margin-top: 135px;
+  width: 130%;
+  display: flex;
+  animation: car 4s linear infinite;
+}
+
+.main-content{
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  margin-top: -100px;
+  padding: 10px;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  padding: 10px;
+}
+
+.main-content p,
+.main-content h1{
+  margin: 10px 0;
+}
+
+.main-content button{
+  margin-top: 15px;
+}
+
+.text-flex,
+.text-flex2{
+  display: flex;
+}
+
+.text-flex img{
+  height: 20px;
+  margin-top: 8px;
+  justify-content: flex-start;
+}
+
+.nav-bar button, 
+.main-content button,
+.red-car button{
+  background-color: hsl(0, 99%, 40%);
+  color: hsl(0, 0%, 100%);
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.nav-bar button:hover, 
+.main-content button:hover,
+.red-car-button:hover{
+  background-color: hsl(0, 100%, 14%);
+  border: 1.5px solid white;
+  transform: scale(1.1);
+}
+
+.service-bg{
+  background-image: url(assets/images/service-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content2{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  padding: 25px;
+}
+
+.main-content2 h2{
+  font-size: 2em;
+  width: 35%;
+}
+
+.engine-repair,
+.break-repair,
+.tire-repair,
+.battery-repair,
+.steering-repair{
+  position: absolute;
+  width: 20%;
+}
+
+.engine-repair{
+  bottom: -35em;
+  left: 9em;
+}
+
+.break-repair{
+  bottom: -28em;
+}
+
+.tire-repair{
+  bottom: -35em;
+  right: 9em;
+}
+
+.battery-repair{
+  left: 0;
+  bottom: -55em;
+}
+
+.steering-repair{
+  right: 0;
+  bottom: -55em;
+}
+
+.engine-repair h3,
+.engine-repair h4,
+.break-repair h3,
+.break-repair h4,
+.tire-repair h3,
+.tire-repair h4,
+.battery-repair h3,
+.battery-repair h4,
+.steering-repair h3,
+.steering-repair h4{
+  margin: 10px 0;
+}
+
+.engine-repair h4,
+.break-repair h4,
+.tire-repair h4,
+.battery-repair h4,
+.steering-repair h4{
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-inline: auto;
+  transition: transform .3s ease;
+}
+
+.engine-repair h4:hover,
+.break-repair h4:hover,
+.tire-repair h4:hover,
+.battery-repair h4:hover,
+.steering-repair h4:hover{
+  color: hsl(0, 100%, 35%);
+  transform: scale(1.1);
+}
+
+.red-car{
+  margin-top: 23em;
+  display: flex;
+  flex-direction: column;
+  animation: car 4s linear infinite;
+}
+
+.red-car-button{
+  background-color: hsl(0, 99%, 40%);
+  color: hsl(0, 0%, 100%);
+  width: 13em;
+  height: 3em;
+  margin-top: 35px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.quality-bg{
+  background-color: hsl(266, 32%, 15%);
+  background-image: url(assets/images/about-abs-banner.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow: hidden;
+}
+
+.imgg{
+  position: absolute;
+  width: 55%;
+}
+
+.main-content3{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 50%;
+  margin-inline: 40%;
+  padding: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.content-container2{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.content-container2 p,
+.content-container2 h2{
+  margin: 6px 0;
+}
+
+.about-banner{
+  position: relative;
+  margin-top: -15em;
+  left: -1em;
+  width: 15em;
+}
+
+.flex-con1,
+.flex-con2{
+  display: flex;
+  gap: 15px;
+  padding: 7.5px 15px;
+}
+
+.square{
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(266, 32%, 10%);
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.square:hover{
+  background-color: hsl(0, 99%, 40%);
+  /* border: 1.5px solid white; */
+  transform: scale(1.1);
+}
+
+.main-content4{
+  background-color: whitesmoke;
+}
+
+.main-margin{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.main-content4 h2{
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  width: 30%;
+}
+
+.main-content4 .text-flex2{
+  justify-content: center;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.auto-repair{
+  background-color: white;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 130px;
+  text-align: center;
+  padding: 30px;
+  width: fit-content;
+}
+
+.auto-repair p{
+  color: red;
+}
+
+.auto-repair h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.footer{
+  background-color: hsl(266, 32%, 15%);
+  color: white;
+}
+
+.footer-content{
+  display: flex;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.footer-car{
+  width: 550px;
+  margin-left: -80px;
+  margin-top: 40px;
+  animation: car 4s linear infinite;
+}
+
+.car-line{
+  margin-top: -270px;
+  margin-left: -80px;
+}
+
+.white-car{
+  position: absolute;
+  bottom: -170em;
+  right: 0;
+}
+
+.socials{
+  z-index: 1;
+  padding: 5px 0;
+}
+
+.socials img{
+  background-color: hsl(266, 32%, 10%);
+  padding: 13px;
+  border-radius: 50%;
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.socials img + img{
+  margin-left: 5px;
+}
+
+.socials img:hover{
+  background-color: hsl(0, 99%, 40%);
+  transform: translateY(-5px);
+}
+
+.div-holder{
+  display: flex;
+}
+
+.first-div,
+.second-div,
+.third-div{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-div{
+  width: 20%;
+  margin-right: 50px;
+  margin-left: -280px;
+}
+
+.first-div p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.second-div h3,
+.third-div h3{
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.second-div span{
+  opacity: .5;
+}
+
+.third-div{
+  margin-top: -88px;
+  width: 60%;
+  margin-left: 80px;
+}
+
+.third-div p{
+  margin-right: 5px;
+  opacity: .5;
+}
+
+/* fix the width of the quality bg for the max width of 1240px */
+@media (max-width: 1240px) {
+  .quality-bg{
+   height: 110vh;
+  }
+}
+
+@media (max-width: 1210px){
+  .square{
+    height: 90px;
+    text-align: center;
+  }
+  .first-div{
+    width: 30%;
+    margin-right: 0;
+    margin-left: -100px;
+  }
+  .second-div{
+    width: 100%;
+  }
+  .third-div{
+    width: 100%;
+    margin-top: -72px;
+  }
+  .white-car{
+    width: 40%;
+    bottom: -172em;
+  }
+}
+
+@media (max-width: 1080px){
+  .content-container{
+    margin-top: 5em;
+    margin-left: 3em;
+  }
+  .square{
+    font-size: .8rem;
+    width: 140px;
+    height: 75px;
+  }
+  .main-content3{
+    width: 60%;
+  }
+  .about-banner{
+    width: 25%;
+  }
+  .projects{
+    width: 80%;
+    margin: auto;
+  }
+  .first-div{
+    width: 35%;
+    margin-left: -100px;
+  }
+  .second-div{
+    width: 100%;
+  }
+  .third-div{
+    width: 90%;
+    margin-top: -72px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .content-container{
+    margin-left: auto;
+    margin-top: 8em;
+  }
+  .hero-car{
+    margin-top: 14em;
+  }
+  .engine-repair,
+  .break-repair,
+  .tire-repair{
+    bottom: -30em;
+  }
+  .battery-repair, 
+  .steering-repair{
+    bottom: -50em;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer-content{
+    font-size: .7rem;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .footer-car,
+  .car-line{
+    margin-top: 0;
+    display: none;
+  }
+  .white-car{
+    display: none;
+  }
+  .first-div{
+    width: 30%;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .main-content{
+    display: block;
+    font-size: .8rem;
+    overflow: hidden;
+  }
+  .content-container{
+    text-align: center;
+    margin-bottom: 200px;
+    /* margin-left: 0; */
+    width: 60%;
+    margin-inline: auto;
+  }
+  .content-container .text-flex,
+  .content-container button{
+    margin-inline: auto;
+  }
+  .hero-car{
+    margin-top: -240px;
+    margin-left: 600px;
+    width: 40%;
+  }
+  /* .phone-dots{
+    display: block;
+  } */
+}
+
+@media (max-width: 850px) {
+  .hero-car{
+    margin-top: -210px;
+    margin-left: 520px;
+  }
+  .projects{
+    display: block;
+    margin: 0 auto;
+  }
+  .projects img{
+    margin-inline: 50%;
+    transform: translateX(-50%);
+  }
+  .main-content4 h2{
+    width: 80%;
+  }
+}
+
+@media (max-width: 830px) {
+  .hero-car{
+    margin-top: -200px;
+  }
+  .red-car{
+    width: 50%;
+  }
+  .battery-repair{
+    left: 50px;
+  }
+  .steering-repair{
+    right: 50px;
+  }
+  .quality-bg{
+    background-image: none;
+  }
+  .main-content3{
+    display: block;
+    margin-inline: auto;
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  .content-container2{
+    margin-top: 30px;
+    margin-inline: auto;
+  }
+  .content-container2 .square,
+  .content-container2 .text-flex2{
+    margin-inline: auto;
+  }
+  .flex-con1,
+  .flex-con2{
+    gap: 10px;
+    
+  }
+  .square{
+    width: 60%;
+    font-size: 1rem;
+  }
+  .about-banner{
+    display: none;
+  }
+  .footer-content{
+    font-size: .5rem;
+  }
+  .first-div{
+    /* width: 100%; */
+    margin: 0;
+  }
+  .third-div{
+    /* width: 100%; */
+    margin-inline: 0;
+    margin-top: -44px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-car{
+    display: none;
+  }
+  .red-car{
+    display: none;
+  }
+  .engine-repair,
+  .break-repair,
+  .tire-repair,
+  .battery-repair,
+  .steering-repair{
+  position: unset;
+  width: 60%;
+  margin: 20px 0;
+}
+.main-content2{
+  padding: 20px;
+  margin: 20px 0;
+}
+.main-content2 h2{
+  width: 70%;
+  font-size: 1.4rem;
+}
+.service-bg{
+  background-image: none;
+  background-color: whitesmoke;
+}
+}
+
+@media (max-width: 650px){
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer{
+    width: 80%;
+  }
+  .second-div{
+    margin-bottom: 50px;
+  }
+  .div-holder{
+    display: block;
+  }
+  .main-content3{
+    margin-top: 0;
+    font-size: .9rem;
+  }
+  .square{
+    font-size: .7rem;
+  }
+}
